@@ -1,0 +1,16 @@
+{
+  "source_repository": "https://github.com/justgook/gamectl",
+  "source_base_revision": "01bbfb1cb07bca898b86e7127cf433d2d23aaf7e",
+  "snapshot_kind": "working-tree source snapshot; no history rewritten",
+  "source_worktree_status": [],
+  "repository": "view.ng-node",
+  "files_sha256": {
+    ".github/workflows/verify.yml": "f4f1f1920aa0ec16710e8cc5c6b196ff69cbe5d0fcb4bdf8c8566e949831178f",
+    "CONTEXT.md": "1f291a69a8bae0994a6e5c659b289f8471190f38d7f9186765a9b7c037ff7df2",
+    "LICENSING.md": "0bddd694c9d8b704519bf4b02a97cb8e0896867f1e102c3b6849c9088eb1f830",
+    "README.md": "43525d4c75748bc9479e76a2818a2cf519ac6944766eb35e393f02b21cca1594",
+    "package.json": "ec4d53cb79431f6447b0b16f7806b5a981cad940785c8edb32275e9beab007f4",
+    "scripts/verify.mjs": "d667d115fc714469e2ee5452c37661d72fc597ac3220b5722a72f32af6692358",
+    "src/views/view-ng-node.js": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9"
+  }
+}
