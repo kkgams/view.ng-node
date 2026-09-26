@@ -1,6 +1,7 @@
 name: verify
 on:
   push:
+    branches: [release]
   pull_request:
 permissions:
   contents: read
