@@ -5,12 +5,21 @@
   "source_worktree_status": [],
   "repository": "view.ng-node",
   "files_sha256": {
-    ".github/workflows/verify.yml": "b737a9f83062bdb3437455e7abab0362ee806c4663fe80af564ea77a353765b3",
+    ".github/workflows/release.yml": "389609993160480e4ff9a918e5ce91c2967207b3120cff633902d9c657e30b39",
+    ".gitignore": "eb23201bf8045bae97d6f115436fbeceb52a080b218644bf1b15f92b9da8dd4e",
     "CONTEXT.md": "1f291a69a8bae0994a6e5c659b289f8471190f38d7f9186765a9b7c037ff7df2",
-    "LICENSING.md": "0bddd694c9d8b704519bf4b02a97cb8e0896867f1e102c3b6849c9088eb1f830",
-    "README.md": "43525d4c75748bc9479e76a2818a2cf519ac6944766eb35e393f02b21cca1594",
-    "package.json": "ec4d53cb79431f6447b0b16f7806b5a981cad940785c8edb32275e9beab007f4",
-    "scripts/verify.mjs": "d667d115fc714469e2ee5452c37661d72fc597ac3220b5722a72f32af6692358",
-    "src/views/view-ng-node.js": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9"
-  }
+    "LICENSE": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+    "LICENSING.md": "d4fd2edc5d99638f92d514cfa5c210d893e65f109a3640717eec4978ad2f849b",
+    "NOTICE": "5d147c0d1cd898214b7534870d55ca293f800da5b948ba2d1c499295975289f5",
+    "NOTICE-EVIDENCE.json": "ac094ffa98e7e3a860f9f24bdb11a1802ad21348b5b716b5d3db099b1c258192",
+    "PUBLISHING.md": "bd53609e046de8dffc3d281d2bff686cdd58439bf853617b0c2fde0478e63458",
+    "README.md": "46402aed60ac4f0a603a0a4e1af6582549c92d6e2c79f24bb067b5a4c9692a7a",
+    "package.json": "09449c6a1dd7dd71640ace364f872314cb35811caca67d3cf50292a0e078d704",
+    "release.json": "80becc2a3c1a748e5331dec07a1bd642c1bd1d3d2b01edad788a11cc60e0c7e1",
+    "scripts/release.py": "45e25fd41691c02c8487ac9365cd74e5cb3c4ea8f602005ab764438e25b90be8",
+    "scripts/verify.mjs": "4bdc45bc8feb1a06465507cb64580ce8c4547a074a98d24b57fc15a53f63cbf5",
+    "src/views/view-ng-node.js": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9",
+    "test/test_release.py": "330586a32413735fdaf28df1071ff8ddd16a7b020fdfa1af92849a277faf80da"
+  },
+  "publication_preparation_source_revision": "ca48dbf190aa66e948a04d2f82a624295b7b6464"
 }

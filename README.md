@@ -6,9 +6,16 @@ A separate internal configured View Project Unit; it is not bundled into view.ng
 
 ## Install mapping
 
-Copy `src/views/view-ng-node.js` to the Project-relative path `views/view-ng-node.js` and configure
-that path in the Host's current Project configuration. This snapshot does not claim
-a stable public package/install format.
+Download the pinned `view.ng-node-0.1.0.zip` and `SHA256SUMS` from the owner-published
+`v0.1.0` GitHub Release and verify the checksum. Unpack into a separate staging
+folder: copy its deployment files to the same Project-relative paths, and keep its
+LICENSE, NOTICE, README.md and unit.json under `notices/project-units/view.ng-node/`.
+Do not unpack metadata over the Project's own README or license. The entry is
+`views/view-ng-node.js` (the archive strips `src/`). Configure that path in Project Config.
+The example's checksum-pinned installer performs these steps for all Units.
+Install dependencies listed below separately; they are not bundled.
+The Host source contract targeted is 2.0.3; package-level GUI validation is a release
+gate, not a claim about every future Host. See `PUBLISHING.md` for release gates.
 
 ## Current prerelease Host contract
 
@@ -29,7 +36,7 @@ does not claim that every interaction has a standalone dynamic integration test.
 
 ## Verify
 
-Requires Node.js 20 or newer.
+Requires Node.js 24 and Python 3 (stdlib only).
 
 ```sh
 npm test
@@ -43,6 +50,8 @@ dependency installs, and build outputs are outside the scan boundary.
 
 ## Release status
 
-Package and binary redistribution is blocked, and `package.json` is private. The
-copyright owner may push source with all rights reserved after reviewing permissions
-for a public source push. See `LICENSING.md`. This repository has no publish workflow.
+GAMS-authored code is Apache-2.0. `package.json` remains private: distribution is a
+GitHub Release ZIP, never npm or OCI. Owner-reviewed LICENSE/NOTICE digest variables
+and release-branch/tag checks gate publication. Identified third-party terms are
+retained in NOTICE, including 98.css MIT terms for the theme. See `LICENSING.md`
+and `PUBLISHING.md`.

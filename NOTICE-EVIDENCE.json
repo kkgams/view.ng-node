@@ -1,0 +1,81 @@
+{
+  "files_sha256": {
+    "src/views/view-ng-node.js": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9"
+  },
+  "limits": "No universal plagiarism search or legal ownership certification. Follow-history can end at file creation/copy and cannot establish upstream import version. Generated package metadata is not source provenance.",
+  "scope": "13 entry-source closures from packaging/ecosystem/ui.py (12 JavaScript Units + theme.the98); Host imports and sibling Project Units excluded. No code changes or wholesale relicensing.",
+  "source_commit": "ca48dbf190aa66e948a04d2f82a624295b7b6464",
+  "unit": {
+    "confidence": "moderate: Git attribution and closure scan; no affirmative proof every line is original",
+    "evidence": [
+      "Static import/asset closure, header/vendoring signal scan, git --follow and line-porcelain blame recorded in sources."
+    ],
+    "excluded_host_imports": [
+      {
+        "host_source": "cmd/app/src/core/runtime.js",
+        "import": "/core/runtime.js",
+        "reason": "Absolute Host package import; not in extraction closure.",
+        "sha256": "d8b20203565414d011a72c7ffa31b55e7b94a6a7e41f46a4b05b042202b4ce84"
+      },
+      {
+        "host_source": "packages/util/ng-node-preset.js",
+        "import": "/util/ng-node-preset.js",
+        "reason": "Absolute Host package import; not in extraction closure.",
+        "sha256": "c1fa4eacfbe90fb76aa1eedb0ee79f6fc58e3767889b2cbac9a1a4f40e4067f6"
+      },
+      {
+        "host_source": "packages/util/view-plugin.js",
+        "import": "/util/view-plugin.js",
+        "reason": "Absolute Host package import; not in extraction closure.",
+        "sha256": "d41f568dfdece1683d59d44f8f8d126bd2dcd55fad659c61eb0f84d430cb9081"
+      }
+    ],
+    "findings": "No identifiable copied third-party header, npm import, vendored library, inline artwork, remote fetch or bundled font found in Unit closure. Git authorship is not proof of copyright ownership.",
+    "kind": "view",
+    "licenses": {
+      "gams_authored_code": "Apache-2.0 (owner decision; installation by parent generator pending)",
+      "third_party": []
+    },
+    "name": "view.ng-node",
+    "notices": [],
+    "release_blockers": [],
+    "sources": [
+      {
+        "blame_authors": [
+          "Rom\u0101ns Pota\u0161ovs"
+        ],
+        "earliest_followed_change": {
+          "author": "Rom\u0101ns Pota\u0161ovs",
+          "authored_at": "2026-04-21T18:04:57+03:00",
+          "commit": "23e8704a61ebf7b2cf1a1ce1c853c090bd1988e2",
+          "email": "justgook@gmail.com",
+          "subject": "\ud83d\ude80(browser2:view-ng): better ui"
+        },
+        "git_blob": "e8f455585cf88da13153ff30f3314f7daabf9ab3",
+        "history_authors": [
+          "Rom\u0101ns Pota\u0161ovs <justgook@gmail.com>"
+        ],
+        "history_count": 30,
+        "latest_change": {
+          "author": "Rom\u0101ns Pota\u0161ovs",
+          "authored_at": "2026-08-21T00:14:48+03:00",
+          "commit": "a8e82d656443cdf027a2a56e696cea3e83d161c6",
+          "email": "justgook@gmail.com",
+          "subject": "\ud83d\udea7(view:ng): add setVar and getVar to foreach node"
+        },
+        "line_count": 895,
+        "path": "views/view-ng-node.js",
+        "scan_signals": [],
+        "sha256": "579287eb118796c5d1d3ee7046e576563fb6e7e25e89067ca690351c5a72ded9",
+        "source_url": "https://github.com/justgook/gamectl/blob/ca48dbf190aa66e948a04d2f82a624295b7b6464/views/view-ng-node.js",
+        "static_imports": [
+          "/core/runtime.js",
+          "/util/ng-node-preset.js",
+          "/util/view-plugin.js"
+        ],
+        "working_tree_matches_HEAD": true
+      }
+    ],
+    "upstream": []
+  }
+}

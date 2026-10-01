@@ -26,7 +26,7 @@ const ownedPaths = [
   resolve(root, 'src'),
   resolve(root, 'scripts'),
   resolve(root, 'package.json'),
-  resolve(root, '.github/workflows/verify.yml'),
+  resolve(root, '.github/workflows/release.yml'),
 ]
 const files = (await Promise.all(ownedPaths.map(walk))).flat()
 const importPattern = /(?:^|\n)\s*(?:import|export)\s+(?:[^"'`;]*?\sfrom\s+)?["']([^"']+)["']/g
@@ -34,7 +34,7 @@ const cssUrlPattern = /url\(\s*(["']?)(.*?)\1\s*\)/gi
 const allowedHostRoots = ['/core/', '/util/', '/widgets/']
 
 for (const file of files) {
-  if (extname(file) === '.js') {
+  if (['.js', '.mjs'].includes(extname(file))) {
     const checked = spawnSync(process.execPath, ['--check', file], { encoding: 'utf8' })
     assert.equal(checked.status, 0, checked.stderr || checked.stdout)
     const source = await readFile(file, 'utf8')
@@ -64,4 +64,4 @@ for (const file of files) {
   }
 }
 
-console.log(`verified ${files.filter(file => ['.js', '.css'].includes(extname(file))).length} source files`)
+console.log(`verified ${files.filter(file => ['.js', '.mjs', '.css'].includes(extname(file))).length} source files`)
