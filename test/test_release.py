@@ -21,6 +21,10 @@ class ReleaseTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name) / 'repo'
         self.root.mkdir()
+        # branch() must read the synthetic package, not this checkout's version.
+        binding = patch.object(release, '__file__', str(self.root / 'scripts/release.py'))
+        binding.start()
+        self.addCleanup(binding.stop)
         (self.root / 'src/views').mkdir(parents=True)
         (self.root / 'src/views/unit.js').write_bytes(b'import "./asset.js"\n')
         (self.root / 'src/views/asset.js').write_bytes(b'export const asset = 1\n')
