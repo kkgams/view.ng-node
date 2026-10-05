@@ -8,11 +8,9 @@ required repository-local assets. It does not own the GAMS Host, runtime, shared
 
 ## Boundary
 
-- Source bytes stay equivalent to the monorepo entry; runtime refactors are out of scope.
 - Project deployment path: `views/view-ng-node.js`.
 - Absolute Host imports remain absolute and are supplied by GAMS.
 - Dependencies on separately configured views/services stay separate.
-- Provenance, source hashes, and Git remote metadata are added by the main ecosystem orchestrator.
 
 ## Maturity
 
