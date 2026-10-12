@@ -1,7 +1,7 @@
 # Owner publishing procedure
 
 Distribution is a GitHub Release ZIP, not npm registry or OCI. Prepared version:
-0.2.0 / v0.2.0. Preparation never pushes or tags.
+0.2.1 / v0.2.1. Preparation never pushes or tags.
 
 1. Review source closure, LICENSE, NOTICE and NOTICE-EVIDENCE.json.
    Apache-2.0 is the owner's standing choice for GAMS-authored code. Identified
@@ -16,7 +16,7 @@ Distribution is a GitHub Release ZIP, not npm registry or OCI. Prepared version:
    verifies and uploads a candidate. Without them, only tests run; no candidate
    is distributed. A wrong nonempty digest or changed evidence fails loudly.
 5. Review the branch candidate; after successful verification and Host consumption,
-   create and push `v0.2.0` at the current release HEAD. Never move a pushed tag.
+   create and push `v0.2.1` at the current release HEAD. Never move a pushed tag.
    Tag CI independently tests, checks branch/tag/version, stages and checks a
    fresh ZIP. The publish job rechecks identity, bytes and SHA256SUMS. GitHub API
    errors fail closed. Only version tags create **public** releases.
@@ -27,8 +27,8 @@ Local rehearsal after exporting APPROVED_LICENSE_SHA256 and
 APPROVED_NOTICE_SHA256:
 
 ```sh
-python3 scripts/release.py stage --tag v0.2.0
-python3 scripts/release.py check --tag v0.2.0
+python3 scripts/release.py stage --tag v0.2.1
+python3 scripts/release.py check --tag v0.2.1
 ```
 
 Staging output must not already exist. ZIP contains deployment paths without
@@ -41,7 +41,7 @@ gate, not an assertion that every later Host is compatible.
 
 ## Coordinated local preparation (not release-ready)
 
-Own version v0.2.0 is prospective, not a published download or dependency pin.
+Own version v0.2.1 is prospective, not a published download or dependency pin.
 The retained, verified source Host target is 2.0.3; no 2.1.0 GUI claim is made.
 SOURCE.json preserves the historical extraction snapshot and appends a separate
 metadata and bounded test-fixture maintenance delta. NOTICE-EVIDENCE.json audits
